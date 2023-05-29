@@ -9,12 +9,9 @@ import {
   css,
   reactjs,
   redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   kanda,
   betterpool,
   inits,
@@ -25,7 +22,10 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  reactquery,
+  postgresql,
+  nextjs,
+  jest,
 } from "../assets";
 
 export const navLinks = [
@@ -88,10 +88,6 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
   },
@@ -100,20 +96,24 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Jest",
+    icon: jest,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Nextjs",
+    icon: nextjs,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "React Query",
+    icon: reactquery,
   },
 ];
 
