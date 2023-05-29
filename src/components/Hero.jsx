@@ -13,7 +13,7 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-8">
           <div className="w-5 h-5 rounded-full bg-[#C56E33]" />
-          <div className="w-1 sm:h-80 h-40 bg-[#C56E33]" />
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
         <div className="flex">
@@ -22,7 +22,6 @@ const Hero = () => {
               Hi, I'm <span className="text-[#C56E33]">Stanley Ogada</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              <br className="sm:block hidden" />
               <br className="sm:block hidden" />
               Thanks for stopping by.
               <br className="sm:block hidden" />
