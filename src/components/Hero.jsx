@@ -39,7 +39,9 @@ const Hero = () => {
                     onClick={() => window.open(LINKEDIN_URL, "_blank")}
                   >
                     {/* <BsLinkedin /> */}
-                    <p className={`mt-2 text-[20px]`}>
+                    <p
+                      className={`underline underline-offset-1 mt-2 text-[20px]`}
+                    >
                       linkedin.com/in/stanley-ogada
                     </p>
                   </div>
@@ -48,7 +50,9 @@ const Hero = () => {
                     onClick={() => window.open(GITHUB_URL, "_blank")}
                   >
                     {/* <BsGithub /> */}
-                    <p className={`mt-2 text-[20px]`}>
+                    <p
+                      className={`underline underline-offset-1 mt-2 text-[20px]`}
+                    >
                       github.com/stanleyogada
                     </p>
                   </div>
@@ -56,7 +60,7 @@ const Hero = () => {
 
                 <a
                   href="../assets/resume.pdf"
-                  className="sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
+                  className="cv sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
                   download="Stanley-Ogada-Senior-Frontend-Developer"
                 >
                   {/* <div className="pr-2">
