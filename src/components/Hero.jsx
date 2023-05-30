@@ -59,7 +59,7 @@ const Hero = () => {
                 </div>
 
                 <a
-                  href="/resume.pdf"
+                  href="/Stanley-Ogada-Senior-Frontend-Developer.pdf"
                   className="cv sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
                   download="Stanley-Ogada-Senior-Frontend-Developer"
                 >
