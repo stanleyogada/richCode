@@ -21,12 +21,12 @@ import nextjs from "./tech/nextjs.png";
 import postgresql from "./tech/postgresql.svg";
 import reactquery from "./tech/reactquery.png";
 
-import consultingbord from "./company/consultingbord.jpeg";
 import xanotech from "./company/xanotech.png";
 import kanda from "./company/kanda.jpeg";
-import betterpool from "./company/betterpool.jpeg";
 import inits from "./company/inits.jpeg";
 import cribstack from "./company/cribstack.jpeg";
+import betterpool from "./company/betterpool.jpeg";
+import consultingbord from "./company/consultingbord.jpeg";
 import florintech from "./company/florintech.png";
 
 import npm from "./projects/npm.png";
