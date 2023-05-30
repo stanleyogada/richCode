@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
-import { motion } from "framer-motion";
-import { RiEye2Line } from "react-icons/ri";
+// import { motion } from "framer-motion";
+// // import { RiEye2Line } from "react-icons/ri";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
@@ -38,9 +38,9 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className="absolute p-2 black-gradient flex items-center justify-center items-center cursor-pointer rounded-lg"
             >
-              <div className="pr-1">
+              {/* <div className="pr-1">
                 <RiEye2Line />
-              </div>
+              </div> */}
               <p>View</p>
             </div>
           </div>

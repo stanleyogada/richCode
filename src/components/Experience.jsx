@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-import { ImLocation } from "react-icons/im";
+// import { ImLocation } from "react-icons/im";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -43,7 +43,7 @@ const ExperienceCard = ({ experience }) => {
         </p>
 
         <div className="flex gap-1 items-center text-[14px]">
-          <ImLocation />
+          {/* <ImLocation /> */}
           <i className="">{experience.location}</i>
 
           <i>({experience.contractType})</i>
