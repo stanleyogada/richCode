@@ -16,7 +16,6 @@ import {
   betterpool,
   inits,
   cribstack,
-  consultingbord,
   xanotech,
   florintech,
   reactquery,
@@ -215,7 +214,7 @@ const experiences = [
   {
     title: "React Engineer",
     company_name: "CONSULTINGBORD LIMITED",
-    icon: consultingbord,
+    icon: betterpool,
     iconBg: "#E6DEDD",
     date: "Apr 2018 - Nov 2018",
     location: " Lagos - Nigeria",

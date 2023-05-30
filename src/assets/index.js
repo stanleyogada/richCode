@@ -26,7 +26,7 @@ import kanda from "./company/kanda.jpeg";
 import inits from "./company/inits.jpeg";
 import cribstack from "./company/cribstack.jpeg";
 import betterpool from "./company/betterpool.jpeg";
-import consultingbord from "./company/consultingbord.jpeg";
+// import consultingbord from "./company/consultingbord.jpeg";
 import florintech from "./company/florintech.png";
 
 import npm from "./projects/npm.png";
@@ -64,7 +64,7 @@ export {
   betterpool,
   inits,
   cribstack,
-  consultingbord,
+  // consultingbord,
   xanotech,
   florintech,
   me,
