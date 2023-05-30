@@ -239,28 +239,60 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial: `When it comes to adjusting to new technologies and feedback, Stanley is unmatched in his intelligence and agility. He takes pride in his work and consistently produces high-caliber results. He works well with others as a team and is always eager to support his colleagues. 
+
+His communication style and abilities are truly impressive. He is skilled at explaining intricate technical ideas to both technical and non-technical audiences. 🙂`,
+    name: "Artur Zhadra",
+    designation: "IT Recruiter",
+    company: "KANDA SOFTWARE",
+    image:
+      "https://media.licdn.com/dms/image/D4D03AQEj7cDjVgrQFA/profile-displayphoto-shrink_200_200/0/1667398990223?e=1691020800&v=beta&t=N_cmKC5TXmoOIEyHIXhT4-HJD6HLbW45qWyHdeG9QPU",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I had the pleasure of working with Stanley as a Frontend Typescript + React developer on my team. Stanley was a great team player, always willing to learn and take on new challenges. He was proactive in suggesting changes and improvements to our projects and his contributions helped drive our success. Stanley's proficiency in Typescript and React was incredibly beneficial to our team and I would highly recommend him to anyone looking for a talented and dedicated Frontend Developer.",
+    name: "David Vass",
+    designation: "Senior Software Engineer",
+    company: "BETTERPOOL",
+    image:
+      "https://media.licdn.com/dms/image/C4D03AQHmIdEmxqfxjA/profile-displayphoto-shrink_200_200/0/1602665983003?e=1691020800&v=beta&t=dPmJEH1s-PENjLDn6SVpMCiG_E3PeUs4OEjachbl90I",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Stanley is a brilliant mind, committed to building capacity and impacting people around him. A very fast learner constantly engaging in self development. Stanley, as a senior Software Engineer, he's highly resourceful. It's always great interacting with him, because you're bound to learn a thing or two from him. Great guy!",
+    name: "Ridwan Oladipupo",
+    designation: "Frontend Engineer",
+    company: "DASH",
+    image:
+      "https://media.licdn.com/dms/image/C4D03AQFxhcnLW71_-g/profile-displayphoto-shrink_200_200/0/1657035821171?e=1691020800&v=beta&t=xf0yQuwA0jiAYSXSMUY9TvYeMq0-3n5sqiKbxkHdj-8",
+  },
+  {
+    testimonial: `Stanley Ogada is a good Frontend Engineer.
+I really appreciated working with him on different projects.
+I recommend his service to anyone!`,
+    name: "Salomon AYAH",
+    designation: "Senior Software Engineer",
+    company: "KANDA SOFTWARE",
+    image:
+      "https://media.licdn.com/dms/image/C4D03AQG_Tg31fW2kfg/profile-displayphoto-shrink_200_200/0/1583924276541?e=1691020800&v=beta&t=eVPlsFDYoF4Hg-aRZ4k7ew8wqjh5KwRzYpUw_pgKdeE",
+  },
+  {
+    testimonial: `I know Stanley as an hard working and very serious team player, he is a dedicated professional and is willing to put that extra help whenever you need it.
+He is a developer whose work in the team makes other team members strive for better results.`,
+    name: "Anani oluwatobiloba",
+    designation: "Full Stack Software Engineer",
+    company: "FAMELAB",
+    image:
+      "https://media.licdn.com/dms/image/C4D03AQFr_W8u2NQ8GQ/profile-displayphoto-shrink_200_200/0/1613084011233?e=1691020800&v=beta&t=LvAKsssTG-2YBO34X6L73ND5uMr34lo_QdE009IrFbw",
+  },
+  {
+    testimonial: `Stanley is an outstanding software engineer that possesses strong analytical, communication, problem-solving, project design, and project execution skills.
+He is always ready to collaborate on all things software engineering.`,
+    name: "Olayinka Olaosebikan",
+    designation: "Backend Developer",
+    company: "E2F",
+    image:
+      "https://media.licdn.com/dms/image/C5603AQFpOSSvs0d9aA/profile-displayphoto-shrink_200_200/0/1638448516330?e=1691020800&v=beta&t=Nmly6gzlLuhzO_iPJtMvVePK05kV-kG3FHmjTn9kSs0",
   },
 ];
 
