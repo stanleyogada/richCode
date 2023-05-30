@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { BsFillInfoCircleFill, BsGithub, BsLinkedin } from "react-icons/bs";
+// import { BsFillInfoCircleFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -38,7 +38,7 @@ const Hero = () => {
                     className="flex gap-3 cursor-pointer items-center text-blue-300"
                     onClick={() => window.open(LINKEDIN_URL, "_blank")}
                   >
-                    <BsLinkedin />
+                    {/* <BsLinkedin /> */}
                     <p className={`mt-2 text-[20px]`}>
                       linkedin.com/in/stanley-ogada
                     </p>
@@ -47,7 +47,7 @@ const Hero = () => {
                     className="flex gap-3 cursor-pointer items-center text-blue-300"
                     onClick={() => window.open(GITHUB_URL, "_blank")}
                   >
-                    <BsGithub />
+                    {/* <BsGithub /> */}
                     <p className={`mt-2 text-[20px]`}>
                       github.com/stanleyogada
                     </p>
@@ -59,9 +59,9 @@ const Hero = () => {
                   className="sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
                   download="Stanley-Ogada-Senior-Frontend-Developer"
                 >
-                  <div className="pr-2">
+                  {/* <div className="pr-2">
                     <RiDownload2Fill />
-                  </div>
+                  </div> */}
                   <p>Download My Résumé</p>
                 </a>
               </div>
