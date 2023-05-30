@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 import { me } from "../assets";
-import { RiDownload2Fill } from "react-icons/ri";
+// import { RiDownload2Fill } from "react-icons/ri";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/stanley-ogada/";
 const GITHUB_URL = "https://github.com/stanleyogada";
@@ -68,9 +68,9 @@ const Hero = () => {
               <br className="sm:block hidden" />
               <br />
               <div className="flex items-center gap-2">
-                <div className="sm:block hidden">
+                {/* <div className="sm:block hidden">
                   <BsFillInfoCircleFill fontSize={"18px"} />
-                </div>
+                </div> */}
                 <i className="sm:text-[20px] text-[17px]">
                   Please ensure to interact with the 3D models (swiping them to
                   the left or right).
