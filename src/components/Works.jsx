@@ -1,6 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 // // import { RiEye2Line } from "react-icons/ri";
 
 import { styles } from "../styles";

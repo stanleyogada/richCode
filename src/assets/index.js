@@ -36,7 +36,7 @@ import nairgym from "./projects/nairgym.png";
 import arggroup from "./projects/arggroup.png";
 import tripguide from "./tripguide.png";
 
-import me from "./me.jpg";
+import me from "/me.jpg";
 
 export {
   logo,
