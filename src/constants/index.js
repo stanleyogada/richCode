@@ -40,6 +40,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -146,8 +150,8 @@ const experiences = [
     points: [
       "Under the direction of the product manager, features were quickly delivered to deployment while adhering to specific ticket goals and utilizing tools like automated tests and feature-flagging with Split.IO.",
       "Excellent communication skills were displayed while working independently and in small teams efficiently and effectively.",
-      "successfully dissected unfamiliar systems to demonstrate autonomy and troubleshooting prowess.",
-      "facilitated productive teamwork between the Czech Republic and the United States by working with teammates across time zones.",
+      "Successfully dissected unfamiliar systems to demonstrate autonomy and troubleshooting prowess.",
+      "Facilitated productive teamwork between the Czech Republic and the United States by working with teammates across time zones.",
     ],
   },
   {
@@ -199,13 +203,13 @@ const experiences = [
     company_name: "SILVERDREAM RESOURCES INT’L",
     icon: backend,
     iconBg: "#E6DEDD",
-    date: "May 2019 - Mar 2022",
+    date: "May 2021 - Mar 2022",
     location: " Lagos - Nigeria",
     contractType: "Contract",
     points: [
       "Managed releases, kept an eye on logs, and produced reports to efficiently find and fix bugs, ensuring that production was updated and fixed on schedule. streamlined workflows by using tools like Sentry, Travis-CI, Git, and GitHub.",
       "Played a significant part in the product design and decision-making processes, aiding in the development of the best user journeys.",
-      "Utilizing a Test-Driven Development (TDD) methodology and tools like Jest and React-Testing-Library, new features were swiftly implemented.",
+      "New features were swiftly implemented using a Test-Driven Development (TDD) methodology and tools like Jest and React-Testing-Library",
     ],
   },
   {
@@ -326,7 +330,7 @@ const projects = [
     description: [
       "Built web app using React and NextJs (for SEO benefits).",
       "Track bugs and view logs, thus maintaining different releases and deployment.",
-      "Work very closely with other teams such as Client, Design, and Backend teams.",
+      "Work  closely with other teams such as Client, Design, and Backend teams.",
     ],
     tags: [
       {

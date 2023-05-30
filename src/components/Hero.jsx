@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
+import { BsFillInfoCircleFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 import { me } from "../assets";
+import { RiDownload2Fill } from "react-icons/ri";
+
+const LINKEDIN_URL = "https://www.linkedin.com/in/stanley-ogada/";
+const GITHUB_URL = "https://github.com/stanleyogada";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto hero`}>
       <div
         className={`absolute inset-0 top-[150px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -24,19 +29,57 @@ const Hero = () => {
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
               <br className="sm:block hidden" />
               Thanks for stopping by.
-              <br className="sm:block hidden" />
+              <br />
               I'm a <i className="text-secondary">frontend developer</i> with
               over 5 years of experience.
+              <div className="flex justify-between sm:flex-row flex-col controls">
+                <div>
+                  <div
+                    className="flex gap-3 cursor-pointer items-center text-blue-300"
+                    onClick={() => window.open(LINKEDIN_URL, "_blank")}
+                  >
+                    <BsLinkedin />
+                    <p className={`mt-2 text-[20px]`}>
+                      linkedin.com/in/stanley-ogada
+                    </p>
+                  </div>
+                  <div
+                    className="flex gap-3 cursor-pointer items-center text-blue-300"
+                    onClick={() => window.open(GITHUB_URL, "_blank")}
+                  >
+                    <BsGithub />
+                    <p className={`mt-2 text-[20px]`}>
+                      github.com/stanleyogada
+                    </p>
+                  </div>
+                </div>
+
+                <a
+                  href="../assets/resume.pdf"
+                  className="sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
+                  download="Stanley-Ogada-Senior-Frontend-Developer"
+                >
+                  <div className="pr-2">
+                    <RiDownload2Fill />
+                  </div>
+                  <p>Download My Résumé</p>
+                </a>
+              </div>
               <br className="sm:block hidden" />
-              <br className="sm:block hidden" />
-              <i className="text-[20px]">
-                Please ensure to interact with the 3D models (swiping them to
-                the left or right).
-              </i>
+              <br />
+              <div className="flex items-center gap-2">
+                <div className="sm:block hidden">
+                  <BsFillInfoCircleFill fontSize={"18px"} />
+                </div>
+                <i className="sm:text-[20px] text-[17px]">
+                  Please ensure to interact with the 3D models (swiping them to
+                  the left or right).
+                </i>
+              </div>
             </p>
           </div>
 
-          <div className="border-4 border-white rounded-full absolute top-[-20px] right-[-150px] overflow-hidden">
+          <div className="sm:block hidden border-4 border-white rounded-full absolute top-[-20px] right-[-150px] overflow-hidden">
             <img
               src={me}
               alt="Stanley Ogada"
@@ -46,7 +89,10 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* <div className="mobile-computer-canvas"> */}
       <ComputersCanvas />
+      {/* </div> */}
+
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
