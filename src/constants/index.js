@@ -19,13 +19,15 @@ import {
   consultingbord,
   xanotech,
   florintech,
-  carrent,
-  jobit,
-  tripguide,
   reactquery,
   postgresql,
   nextjs,
   jest,
+  npm,
+  runyourpool,
+  silverdream,
+  nairgym,
+  arggroup,
 } from "../assets";
 
 export const navLinks = [
@@ -264,37 +266,90 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "Run Your Pool (BETTERPOOL)",
+    description: [
+      "Add new features on demand such as re-developing sign-up and pick-sheet user flow, notifications, chats, etc.",
+      "Work very closely with other teams such as Marketing, Design, Backend, Product, and QA teams.",
+      "Participate in code review on the frontend codebase and ensure code consistency and efficiency.",
+    ],
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "react-query",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: runyourpool,
+    source_code_link: "https://www.runyourpool.com/",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    name: "Silverdream",
+    description: [
+      "Built web app using React and NextJs (for SEO benefits).",
+      "Track bugs and view logs, thus maintaining different releases and deployment.",
+      "Work very closely with other teams such as Client, Design, and Backend teams.",
+    ],
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "nextJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "chakraUI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: silverdream,
+    source_code_link: "https://silverdream.ng",
+  },
+  {
+    name: "React Rapid Carousel",
+    description: [
+      "Consider trying this package because React apps deserve an easy-to-integrate yet lightweight Carousel.",
+      "Maintained different releases and got over 79 weekly downloads.",
+    ],
+    tags: [
+      {
+        name: "react-library",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "styled-component",
+        color: "green-text-gradient",
+      },
+      {
+        name: "jest",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: npm,
+    source_code_link:
+      "https://www.npmjs.com/package/react-rapid-carousel?activeTab=readme",
+  },
+  {
+    name: "React Rapid Table",
+    description: [
+      "Managed multiple releases successfully, averaging more than 70 downloads per week.",
+      "Markdown tables were used to fully document the Component and hooks API, providing developers with thorough and easy-to-access reference material.",
+    ],
+    tags: [
+      {
+        name: "react-library",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "jest",
         color: "green-text-gradient",
       },
       {
@@ -302,29 +357,56 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: npm,
+    source_code_link:
+      "https://www.npmjs.com/package/react-rapid-table?activeTab=readme",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "Nairgym",
+    description: [
+      "A professional education center dedicated to children where they can learn many things. They promote sport for children.",
+      "An amazing project that I'm proud of being part of.",
+      "Bootstrap frontend project using Create React App, and Redux for state management",
+    ],
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodeJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nairgym,
+    source_code_link: "https://www.nairgym.lu/",
+  },
+  {
+    name: "ARG GROUP Official website",
+    description: [
+      "ARG is the reference company you are looking for in debt collection that has been in the region for over 10 years. They help you to recover your debts in a short time in all the West Africa.",
+      "Bootstrap this amazing website using Create React App, Redux for state management, Framer motion for animation",
+    ],
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "framer-motion",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "SEO",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: arggroup,
+    source_code_link: "http://www.recouvrementdugolfe.com/",
   },
 ];
 

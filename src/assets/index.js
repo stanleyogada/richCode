@@ -29,8 +29,11 @@ import inits from "./company/inits.jpeg";
 import cribstack from "./company/cribstack.jpeg";
 import florintech from "./company/florintech.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import npm from "./projects/npm.png";
+import runyourpool from "./projects/runyourpool.png";
+import silverdream from "./projects/silverdream.png";
+import nairgym from "./projects/nairgym.png";
+import arggroup from "./projects/arggroup.png";
 import tripguide from "./tripguide.png";
 
 import me from "./me.jpg";
@@ -64,8 +67,10 @@ export {
   consultingbord,
   xanotech,
   florintech,
-  carrent,
-  jobit,
-  tripguide,
   me,
+  npm,
+  runyourpool,
+  silverdream,
+  nairgym,
+  arggroup,
 };
