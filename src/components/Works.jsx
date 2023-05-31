@@ -34,7 +34,7 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
+            <button
               onClick={() => window.open(source_code_link, "_blank")}
               className="absolute p-2 black-gradient flex items-center justify-center items-center cursor-pointer rounded-lg"
             >
@@ -42,7 +42,7 @@ const ProjectCard = ({
                 <RiEye2Line />
               </div> */}
               <p>View</p>
-            </div>
+            </button>
           </div>
         </div>
 
