@@ -203,8 +203,9 @@
   }
 }
 /* screen and (max-width: 1700px) */
-@media (min-width: 768px) and (max-width: 2400px) {
+@media (min-width: 768px) and (max-width: 1700px) {
   .hero {
+    /* border: 3px dotted; */
     height: 170vh;
     overflow-x: hidden;
   }
@@ -218,6 +219,8 @@
 
 @media screen and (max-width: 500px) {
   .hero {
+    /* border: 3px dotted red; */
+
     height: 180vh;
     top: -70px;
   }
@@ -225,6 +228,8 @@
 
 @media screen and (max-width: 375px) {
   .hero {
+    /* border: 3px dotted green; */
+
     height: 220vh;
     top: -70px;
   }
