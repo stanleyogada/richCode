@@ -34,15 +34,18 @@ const Hero = () => {
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I'm <span className="text-[#C56E33]">Stanley Ogada</span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              <br className="sm:block hidden" />
-              Thanks for stopping by.
-              <br />
-              I'm a <i className="text-secondary">frontend developer</i> with
-              over 5 years of experience.
+            <div className={`${styles.heroSubText} mt-2 text-white-100`}>
+              <p>
+                <br className="sm:block hidden" />
+                Thanks for stopping by.
+                <br />
+                I'm a <i className="text-secondary">frontend developer</i> with
+                over 5 years of experience.
+              </p>
+
               <div className="flex justify-between sm:flex-row flex-col controls">
                 <div>
-                  <div
+                  <button
                     className="flex gap-3 cursor-pointer items-center text-blue-300"
                     onClick={() => window.open(LINKEDIN_URL, "_blank")}
                   >
@@ -52,8 +55,8 @@ const Hero = () => {
                     >
                       linkedin.com/in/stanley-ogada
                     </p>
-                  </div>
-                  <div
+                  </button>
+                  <button
                     className="flex gap-3 cursor-pointer items-center text-blue-300"
                     onClick={() => window.open(GITHUB_URL, "_blank")}
                   >
@@ -63,12 +66,12 @@ const Hero = () => {
                     >
                       github.com/stanleyogada
                     </p>
-                  </div>
+                  </button>
                 </div>
 
                 <button
                   onClick={handleRequestResume}
-                  className="cv sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
+                  className="sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
                 >
                   <p>Request My Résumé</p>
                 </button>
@@ -84,7 +87,7 @@ const Hero = () => {
                   the left or right).
                 </i>
               </div>
-            </p>
+            </div>
           </div>
 
           <div className="me border-4 border-white rounded-full absolute top-[-20px] right-[-150px] overflow-hidden">
