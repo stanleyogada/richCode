@@ -45,7 +45,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.2, 2)}
-        className="mt-4 text-secondary text-[20px] max-w-3xl leading-[40px]"
+        className="mt-4 text-secondary sm:text-[20px] text-[15px] max-w-3xl sm:leading-[40px] leading-[35px]"
       >
         Senior front-end developer with over 5+ years of experience developing
         front-end web apps based on React. Self-starter with a strong work ethic

@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { useSendEmail } from "../hooks";
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,11 +16,7 @@ const Contact = () => {
     message: "",
   });
 
-  const [state, setState] = useState({
-    loading: false,
-    success: false,
-    error: false,
-  });
+  const { handleSend, state } = useSendEmail();
 
   const handleChange = (e) => {
     const { target } = e;
@@ -33,43 +30,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setState({
-      loading: true,
-      success: false,
-      error: false,
-    });
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: `${form.name}:: RICH_CODE OFFICIAL WEBSITE!!`,
-          from_email: form.email,
-          to_email: import.meta.env.VITE_APP_MY_EMAIL_ADDRESS,
-          message: `${form.message} \n\n FROM: ${form.email}`,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setState({
-            loading: false,
-            success: true,
-            error: false,
-          });
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading({ loading: false, success: false, error: true });
-          console.error(error);
-        }
-      );
+    handleSend({
+      from_name: form.name,
+      to_name: `${form.name}:: RICH_CODE OFFICIAL WEBSITE!!`,
+      from_email: form.email,
+      message: `${form.message} \n\n FROM: ${form.email}`,
+      onSuccess: () =>
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        }),
+    });
   };
 
   const renderAlert = (() => {
@@ -138,7 +111,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-black-100 sm:p-8 p-5 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>

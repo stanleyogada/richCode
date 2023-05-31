@@ -34,7 +34,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white sm:text-[24px] text-[18px] font-bold">
+          {experience.title}
+        </h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
@@ -42,7 +44,7 @@ const ExperienceCard = ({ experience }) => {
           {experience.company_name}
         </p>
 
-        <div className="flex gap-1 items-center text-[14px]">
+        <div className="flex gap-1 items-center sm:text-[14px] text-[12px]">
           {/* <ImLocation /> */}
           <i className="">{experience.location}</i>
 
@@ -54,7 +56,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-white-100 text-[16px] pl-1 pb-2 tracking-wider"
+            className="text-white-100 sm:text-[16px] text-[13px] pl-1 pb-2 tracking-wider"
           >
             {point}
           </li>

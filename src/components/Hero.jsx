@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 // import { BsFillInfoCircleFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
+import { useSendEmail } from "../hooks/index.js";
+
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
@@ -11,6 +13,12 @@ const LINKEDIN_URL = "https://www.linkedin.com/in/stanley-ogada/";
 const GITHUB_URL = "https://github.com/stanleyogada";
 
 const Hero = () => {
+  const { handleSend } = useSendEmail();
+
+  const handleRequestResume = () => {
+    handleSend();
+  };
+
   return (
     <section className={`relative w-full h-screen mx-auto hero`}>
       <div
@@ -58,16 +66,12 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <a
-                  href="/Stanley-Ogada-Senior-Frontend-Developer.pdf"
+                <button
+                  onClick={handleRequestResume}
                   className="cv sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
-                  download="Stanley-Ogada-Senior-Frontend-Developer"
                 >
-                  {/* <div className="pr-2">
-                    <RiDownload2Fill />
-                  </div> */}
-                  <p>Download My Résumé</p>
-                </a>
+                  <p>Request My Résumé</p>
+                </button>
               </div>
               <br className="sm:block hidden" />
               <br />
@@ -83,7 +87,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="sm:block hidden border-4 border-white rounded-full absolute top-[-20px] right-[-150px] overflow-hidden">
+          <div className="me border-4 border-white rounded-full absolute top-[-20px] right-[-150px] overflow-hidden">
             <img
               src={me}
               alt="Stanley Ogada"
