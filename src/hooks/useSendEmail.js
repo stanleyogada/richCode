@@ -34,34 +34,36 @@ const useSendEmail = () => {
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
-      .then(() => {
-        setState({
-          loading: false,
-          success: true,
-          error: false,
-        });
-
-        setTimeout(() => {
+      .then(
+        () => {
           setState({
             loading: false,
-            success: false,
+            success: true,
             error: false,
           });
-        }, 5000);
 
-        onSuccess();
-      })
-      .catch((error) => {
-        setState({ loading: false, success: false, error: true });
-        setTimeout(() => {
-          setState({
-            loading: false,
-            success: false,
-            error: false,
-          });
-        }, 5000);
-        console.error(error);
-      });
+          setTimeout(() => {
+            setState({
+              loading: false,
+              success: false,
+              error: false,
+            });
+          }, 5000);
+
+          onSuccess();
+        },
+        (error) => {
+          setState({ loading: false, success: false, error: true });
+          setTimeout(() => {
+            setState({
+              loading: false,
+              success: false,
+              error: false,
+            });
+          }, 5000);
+          console.error(error);
+        }
+      );
   };
 
   return {
