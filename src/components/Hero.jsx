@@ -1,26 +1,40 @@
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-// import { BsFillInfoCircleFill, BsGithub, BsLinkedin } from "react-icons/bs";
-
-import { useSendEmail } from "../hooks/index.js";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 import { me } from "../assets";
-// import { RiDownload2Fill } from "react-icons/ri";
+import { useFormEmail } from "../hooks";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/stanley-ogada/";
 const GITHUB_URL = "https://github.com/stanleyogada";
 
 const Hero = () => {
-  const { handleSend } = useSendEmail();
+  const [hasRequestResume, setHasRequestResume] = useState(false);
+  const handleRequestResume = (value = true) => setHasRequestResume(value);
 
-  const handleRequestResume = () => {
-    handleSend();
-  };
+  const formRef = useRef();
+
+  const { handleChange, handleSubmit, state, form, renderAlert } = useFormEmail(
+    {
+      initialForm: {
+        name: "",
+        email: "",
+      },
+      onSend: (form) => ({
+        from_name: form.name,
+        to_name: `CV REQUEST!!!!! ${form.name}:: RICH_CODE OFFICIAL WEBSITE!!`,
+        from_email: form.email,
+        message: `Hi, Please can I have your CV? \n\n FROM: ${form.email}`,
+      }),
+      onSuccess: () => hasRequestResume(false),
+    }
+  );
 
   return (
     <section className={`relative w-full h-screen mx-auto hero`}>
+      {renderAlert}
       <div
         className={`absolute inset-0 top-[150px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -69,12 +83,71 @@ const Hero = () => {
                   </button>
                 </div>
 
-                <button
-                  onClick={handleRequestResume}
-                  className="sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
-                >
-                  <p>Request My Résumé</p>
-                </button>
+                <div className="relative">
+                  {!hasRequestResume ? (
+                    <button
+                      onClick={() => handleRequestResume()}
+                      className="sm:p-2 p-0 sm:px-0 py-2 orange-text-gradient flex items-center justify-center items-center cursor-pointer rounded-lg sm:self-end self-start"
+                    >
+                      <p>Request My Résumé</p>
+                    </button>
+                  ) : (
+                    <>
+                      <div className="bg-[#ffffff89] fixed top-[0px] left-[10px] w-[100vw] h-[100vh]"></div>
+                      <form
+                        ref={formRef}
+                        onSubmit={handleSubmit}
+                        className="text-[18px] mt-12 flex flex-col gap-8 fixed top-[30%] left-[50%] sm:w-[450px] w-[350px] sm:h-[470px] h-[370px] translate-x-[-50%] translate-y-[-50%] shadow-md shadow-primary bg-black-100 sm:p-8 p-5 rounded-2xl"
+                      >
+                        <label className="flex flex-col">
+                          <span className="text-white font-medium mb-2">
+                            Your Name
+                          </span>
+                          <input
+                            type="text"
+                            name="name"
+                            value={form.name}
+                            onChange={handleChange}
+                            placeholder="What's your good name?"
+                            className="bg-tertiary py-2 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                          />
+                        </label>
+
+                        <label className="flex flex-col">
+                          <span className="text-white font-medium mb-2">
+                            Your email
+                          </span>
+                          <input
+                            type="email"
+                            name="email"
+                            value={form.email}
+                            onChange={handleChange}
+                            placeholder="What's your web address?"
+                            className="bg-tertiary py-2 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                          />
+                        </label>
+
+                        <button
+                          type="submit"
+                          className="orange-text-gradient flex items-center justify-center items-center cursor-pointer border border-red rounded-lg py-2"
+                          disabled={!form.name || !form.email || state.loading}
+                        >
+                          {state.loading
+                            ? "Sending Request..."
+                            : "Request My Résumé"}
+                        </button>
+                        <button
+                          type="button"
+                          className="bg-tertiary py-2 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary absolute bottom-[10px] right-[10px]"
+                          disabled={state.loading}
+                          onClick={() => handleRequestResume(false)}
+                        >
+                          Cancel
+                        </button>
+                      </form>
+                    </>
+                  )}
+                </div>
               </div>
               <br className="sm:block hidden" />
               <br />
@@ -99,11 +172,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
       {/* <div className="mobile-computer-canvas"> */}
       <ComputersCanvas />
       {/* </div> */}
-
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

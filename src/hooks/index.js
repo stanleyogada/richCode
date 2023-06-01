@@ -1,3 +1,4 @@
-import useSendEmail from "./useSendEmail.js";
+import useSendEmail from "./useSendEmail";
+import useFormEmail from "./useFormEmail";
 
-export { useSendEmail };
+export { useSendEmail, useFormEmail };

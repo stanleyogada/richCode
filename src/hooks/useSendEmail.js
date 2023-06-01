@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const useSendEmail = () => {
   const [state, setState] = useState({
@@ -33,21 +34,34 @@ const useSendEmail = () => {
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        () => {
+      .then(() => {
+        setState({
+          loading: false,
+          success: true,
+          error: false,
+        });
+
+        setTimeout(() => {
           setState({
             loading: false,
-            success: true,
+            success: false,
             error: false,
           });
+        }, 5000);
 
-          onSuccess();
-        },
-        (error) => {
-          setLoading({ loading: false, success: false, error: true });
-          console.error(error);
-        }
-      );
+        onSuccess();
+      })
+      .catch((error) => {
+        setState({ loading: false, success: false, error: true });
+        setTimeout(() => {
+          setState({
+            loading: false,
+            success: false,
+            error: false,
+          });
+        }, 5000);
+        console.error(error);
+      });
   };
 
   return {
