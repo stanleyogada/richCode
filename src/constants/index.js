@@ -421,30 +421,6 @@ const projects = [
     source_code_link: "http://www.recouvrementdugolfe.com/",
   },
   {
-    name: "React Rapid Carousel",
-    description: [
-      "Consider trying this package because React apps deserve an easy-to-integrate yet lightweight Carousel.",
-      "Maintained different releases and got over 79 weekly downloads.",
-    ],
-    tags: [
-      {
-        name: "react-library",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "styled-component",
-        color: "green-text-gradient",
-      },
-      {
-        name: "jest",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: npm,
-    source_code_link:
-      "https://www.npmjs.com/package/react-rapid-carousel?activeTab=readme",
-  },
-  {
     name: "React Rapid Table",
     description: [
       "Managed multiple releases successfully, averaging more than 70 downloads per week.",
