@@ -303,7 +303,7 @@ const projects = [
   {
     name: "React RC Carousel",
     description: [
-      "My most react carousel with the most simplistic API and packed with animation options",
+      "My most react carousel with the most simplistic API and is packed with animation options",
       "Maintained different releases and got over 1,000 weekly downloads.",
       "Added a good and comprehensive documentation.",
     ],
