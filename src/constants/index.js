@@ -50,7 +50,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Open Source Developer",
     icon: web,
   },
   {
@@ -301,6 +301,30 @@ He is always ready to collaborate on all things software engineering.`,
 
 const projects = [
   {
+    name: "React RC Carousel",
+    description: [
+      "My most react carousel with the most simplistic API and packed with animation options",
+      "Maintained different releases and got over 1,000 weekly downloads.",
+      "Added a good and comprehensive documentation.",
+    ],
+    tags: [
+      {
+        name: "react-library",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "styled-component",
+        color: "green-text-gradient",
+      },
+      {
+        name: "slider",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: npm,
+    source_code_link: "https://www.npmjs.com/package/react-rc-carousel",
+  },
+  {
     name: "Run Your Pool (BETTERPOOL)",
     description: [
       "Add new features on demand such as re-developing sign-up and pick-sheet user flow, notifications, chats, etc.",
@@ -347,6 +371,54 @@ const projects = [
     ],
     image: silverdream,
     source_code_link: "https://silverdream.ng",
+  },
+
+  {
+    name: "Nairgym",
+    description: [
+      "A professional education center dedicated to children where they can learn many things. They promote sport for children.",
+      "An amazing project that I'm proud of being part of.",
+      "Bootstrap frontend project using Create React App, and Redux for state management",
+    ],
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodeJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nairgym,
+    source_code_link: "https://www.nairgym.lu/",
+  },
+  {
+    name: "ARG GROUP Official website",
+    description: [
+      "ARG is the reference company you are looking for in debt collection that has been in the region for over 10 years. They help you to recover your debts in a short time in all the West Africa.",
+      "Bootstrap this amazing website using Create React App, Redux for state management, Framer motion for animation",
+    ],
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SEO",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: arggroup,
+    source_code_link: "http://www.recouvrementdugolfe.com/",
   },
   {
     name: "React Rapid Carousel",
@@ -395,53 +467,6 @@ const projects = [
     image: npm,
     source_code_link:
       "https://www.npmjs.com/package/react-rapid-table?activeTab=readme",
-  },
-  {
-    name: "Nairgym",
-    description: [
-      "A professional education center dedicated to children where they can learn many things. They promote sport for children.",
-      "An amazing project that I'm proud of being part of.",
-      "Bootstrap frontend project using Create React App, and Redux for state management",
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodeJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "postgresql",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: nairgym,
-    source_code_link: "https://www.nairgym.lu/",
-  },
-  {
-    name: "ARG GROUP Official website",
-    description: [
-      "ARG is the reference company you are looking for in debt collection that has been in the region for over 10 years. They help you to recover your debts in a short time in all the West Africa.",
-      "Bootstrap this amazing website using Create React App, Redux for state management, Framer motion for animation",
-    ],
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "framer-motion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "SEO",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: arggroup,
-    source_code_link: "http://www.recouvrementdugolfe.com/",
   },
 ];
 
