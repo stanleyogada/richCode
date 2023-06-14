@@ -36,7 +36,7 @@ import nairgym from "./projects/nairgym.png";
 import arggroup from "./projects/arggroup.png";
 import tripguide from "./tripguide.png";
 
-import me from "/me.jpg";
+import me_image from "/me.png";
 
 export {
   logo,
@@ -67,7 +67,7 @@ export {
   // consultingbord,
   xanotech,
   florintech,
-  me,
+  me_image as me,
   npm,
   runyourpool,
   silverdream,
