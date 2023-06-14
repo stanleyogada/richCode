@@ -28,7 +28,10 @@ const Hero = () => {
         from_email: form.email,
         message: `Hi, Please can I have your CV? \n\n FROM: ${form.email}`,
       }),
-      onSuccess: () => hasRequestResume(false),
+      onSuccess: () => {
+        console.log("onSuccess called");
+        hasRequestResume(false);
+      },
     }
   );
 
@@ -93,7 +96,10 @@ const Hero = () => {
                     </button>
                   ) : (
                     <>
-                      <div className="bg-[#ffffff89] fixed top-[0px] left-[10px] w-[100vw] h-[100vh]"></div>
+                      <div
+                        className="bg-[#ffffff89] fixed top-[0px] left-[10px] w-[100vw] h-[100vh]"
+                        onClick={() => handleRequestResume(false)}
+                      ></div>
                       <form
                         ref={formRef}
                         onSubmit={handleSubmit}
@@ -108,7 +114,7 @@ const Hero = () => {
                             name="name"
                             value={form.name}
                             onChange={handleChange}
-                            placeholder="What's your good name?"
+                            placeholder="What's your name?"
                             className="bg-tertiary py-2 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                           />
                         </label>
@@ -122,7 +128,7 @@ const Hero = () => {
                             name="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder="What's your web address?"
+                            placeholder="What's your email address?"
                             className="bg-tertiary py-2 px-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                           />
                         </label>

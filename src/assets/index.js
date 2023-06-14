@@ -26,7 +26,6 @@ import kanda from "./company/kanda.jpeg";
 import inits from "./company/inits.jpeg";
 import cribstack from "./company/cribstack.jpeg";
 import betterpool from "./company/betterpool.jpeg";
-// import consultingbord from "./company/consultingbord.jpeg";
 import florintech from "./company/florintech.png";
 
 import npm from "./projects/npm.png";
@@ -34,7 +33,6 @@ import runyourpool from "./projects/runyourpool.png";
 import silverdream from "./projects/silverdream.png";
 import nairgym from "./projects/nairgym.png";
 import arggroup from "./projects/arggroup.png";
-import tripguide from "./tripguide.png";
 
 import me_image from "/me.png";
 
