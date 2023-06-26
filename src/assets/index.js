@@ -33,6 +33,7 @@ import runyourpool from "./projects/runyourpool.png";
 import silverdream from "./projects/silverdream.png";
 import nairgym from "./projects/nairgym.png";
 import arggroup from "./projects/arggroup.png";
+import showYourCarz from "./projects/show-your-carz.png";
 
 import me_image from "/me.png";
 
@@ -71,4 +72,5 @@ export {
   silverdream,
   nairgym,
   arggroup,
+  showYourCarz,
 };

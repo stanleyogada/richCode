@@ -27,6 +27,7 @@ import {
   silverdream,
   nairgym,
   arggroup,
+  showYourCarz,
 } from "../assets";
 
 export const navLinks = [
@@ -301,6 +302,30 @@ He is always ready to collaborate on all things software engineering.`,
 
 const projects = [
   {
+    name: "Show Your Carz",
+    description: [
+      "A nextjs app that allows you to explore different car models and their specifications.",
+      "Built with Nextjs, Chakra UI, and React Query.",
+      "The app is fully responsive and has a good SEO, with server-side rendering.",
+    ],
+    tags: [
+      {
+        name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: showYourCarz,
+    source_code_link: "https://show-your-carz.vercel.app/",
+  },
+  {
     name: "React RC Carousel",
     description: [
       "My most react carousel with the most simplistic API and is packed with animation options",
@@ -419,30 +444,6 @@ const projects = [
     ],
     image: arggroup,
     source_code_link: "http://www.recouvrementdugolfe.com/",
-  },
-  {
-    name: "React Rapid Table",
-    description: [
-      "Managed multiple releases successfully, averaging more than 70 downloads per week.",
-      "Markdown tables were used to fully document the Component and hooks API, providing developers with thorough and easy-to-access reference material.",
-    ],
-    tags: [
-      {
-        name: "react-library",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "jest",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: npm,
-    source_code_link:
-      "https://www.npmjs.com/package/react-rapid-table?activeTab=readme",
   },
 ];
 
