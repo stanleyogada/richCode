@@ -42,7 +42,7 @@ const App = () => {
               </span>{" "}
               using React by{" "}
               <Link
-                href="https://www.linkedin.com/in/stanley-ogada/"
+                href="https://www.linkedin.com/in/stanley-ogada"
                 className="text-blue-500 underline"
               >
                 Stanley Ogada (RichCode)
