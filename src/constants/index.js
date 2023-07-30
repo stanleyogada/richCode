@@ -28,6 +28,9 @@ import {
   nairgym,
   arggroup,
   showYourCarz,
+  cribstackApp,
+  helix,
+  xanotechApp,
 } from "../assets";
 
 export const navLinks = [
@@ -302,6 +305,79 @@ He is always ready to collaborate on all things software engineering.`,
 
 const projects = [
   {
+    name: "Run Your Pool (BETTERPOOL)",
+    description: [
+      "Add new features on demand such as re-developing sign-up and pick-sheet user flow, notifications, chats, etc.",
+      "Work very closely with other teams such as Marketing, Design, Backend, Product, and QA teams.",
+      "Participate in code review on the frontend codebase and ensure code consistency and efficiency.",
+    ],
+    tags: [
+      {
+        name: "react-query",
+        color: "green-text-gradient",
+      },
+      {
+        name: "split.io",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: runyourpool,
+    source_code_link: "https://www.runyourpool.com/",
+  },
+  {
+    name: "Cribstack House Listing App",
+    description: [
+      "Revamped Cribstack's frontend by transitioning the entire application from JavaScript to TypeScript for improved code quality and maintainability.",
+      "Spearheaded the development of core functionalities including Authentication and House listing.",
+      "Achieved an impressive 60% test coverage per feature, ensuring the reliability and robustness of the application.",
+    ],
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "REST API",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cribstackApp,
+    source_code_link: "https://www.cribstack.com/search",
+  },
+  {
+    name: "Helix ESports Leader-board (KANDA)",
+    description: [
+      "Developed Helix Sports Leader-board frontend from scratch, integrating AWS hosted backend API for player scores.",
+      "Implemented timer countdown and slideshow features for enhanced user experience.",
+      "Solely responsible for the setup and construction of the entire frontend application.",
+    ],
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "REST API",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: helix,
+    source_code_link: "https://helix-dev.vercel.app/",
+  },
+
+  {
     name: "Show Your Carz",
     description: [
       "A nextjs app that allows you to explore different car models and their specifications.",
@@ -350,30 +426,6 @@ const projects = [
     source_code_link: "https://www.npmjs.com/package/react-rc-carousel",
   },
   {
-    name: "Run Your Pool (BETTERPOOL)",
-    description: [
-      "Add new features on demand such as re-developing sign-up and pick-sheet user flow, notifications, chats, etc.",
-      "Work very closely with other teams such as Marketing, Design, Backend, Product, and QA teams.",
-      "Participate in code review on the frontend codebase and ensure code consistency and efficiency.",
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react-query",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: runyourpool,
-    source_code_link: "https://www.runyourpool.com/",
-  },
-  {
     name: "Silverdream",
     description: [
       "Built web app using React and NextJs (for SEO benefits).",
@@ -397,7 +449,30 @@ const projects = [
     image: silverdream,
     source_code_link: "https://silverdream.ng",
   },
-
+  {
+    name: "Xanotech Solutions",
+    description: [
+      "Implemented CI/CD with CircleCI and GitHub Actions, building cross-platform frameworks for enhanced functionality and streamlined integration.",
+      "Boosted user experience across supported client platforms, resulting in a 5% increase in clients within two months.",
+      "Utilized Trello, Slack, and Google Meet to foster close collaboration, demonstrating leadership and effective communication skills while efficiently resolving bugs.",
+    ],
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: xanotechApp,
+    source_code_link: "https://xanotech.io/",
+  },
   {
     name: "Nairgym",
     description: [

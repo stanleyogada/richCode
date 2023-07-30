@@ -34,6 +34,9 @@ import silverdream from "./projects/silverdream.png";
 import nairgym from "./projects/nairgym.png";
 import arggroup from "./projects/arggroup.png";
 import showYourCarz from "./projects/show-your-carz.png";
+import cribstackApp from "./projects/cribstack.png";
+import helix from "./projects/helix.png";
+import xanotechApp from "./projects/xanotech.png";
 
 import me_image from "/me.png";
 
@@ -73,4 +76,7 @@ export {
   nairgym,
   arggroup,
   showYourCarz,
+  cribstackApp,
+  helix,
+  xanotechApp,
 };
