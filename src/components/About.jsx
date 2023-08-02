@@ -51,8 +51,9 @@ const About = () => {
         front-end web apps based on React. Self-starter with a strong work ethic
         who approaches challenges with enthusiasm. I also find all these
         interesting: code reviewing, automated testing, pair-coding, chilling
-        with teammates in video meetings, and estimating story points :). I am
-        looking forward to working in a remote, competitive, and demanding
+        with teammates in video meetings, and estimating story points :).
+        <br />
+        I am looking forward to working in a remote, competitive, and demanding
         environment at this stage in my career.
       </motion.p>
 
