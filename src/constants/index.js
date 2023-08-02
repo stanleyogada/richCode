@@ -376,6 +376,30 @@ const projects = [
     image: helix,
     source_code_link: "https://helix-dev.vercel.app/",
   },
+  {
+    name: "Infinite Scroll Table",
+    description: [
+      "Designed to showcase expertise in handling large datasets and enhancing user experience, this app demonstrates the flawless integration of the infinite scrolling feature in a list of fetched data.",
+      "Experience the seamless implementation of infinite scrolling with this demo app, discover the power of infinite scrolling firsthand.",
+    ],
+    tags: [
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Axios",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+    ],
+    image:
+      "https://media.licdn.com/dms/image/D4D2DAQHmzyhhk6jHgw/profile-treasury-image-shrink_800_800/0/1687793602978?e=1691622000&v=beta&t=rU_hYZbeI6OHnGrb6eiwnwMn0wGt2TpAA65JHtDPOsA",
+    source_code_link: "https://infinite-scroll-table-app.vercel.app/",
+  },
 
   {
     name: "Show Your Carz",
