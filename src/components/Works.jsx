@@ -35,9 +35,6 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className="absolute p-2 black-gradient flex items-center justify-center items-center cursor-pointer rounded-lg"
             >
-              {/* <div className="pr-1">
-                <RiEye2Line />
-              </div> */}
               <p>View</p>
             </button>
           </div>
